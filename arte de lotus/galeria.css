@@ -1,0 +1,18 @@
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.galeria-item{
+    width: 25%;
+    padding: 2em;
+    padding-left: 2em;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+}
+.galeria-item:hover{
+    width: 27%;
+
+}
+

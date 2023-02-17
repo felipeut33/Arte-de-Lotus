@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --purpura: #c276a6;
+    --fonte-principal: 'Josefin Sans';
+}
+
+body{
+    font-family: var(--fonte-principal);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    color: #ffffff;
+	animation: gradient 15s ease infinite;
+	height: 400vh;  
+}
+.cabeçalho {
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:10px 10px 10px 10px rgb( 0 0 0 / 0.3) ;
+}
+
+.cabeçalho__icon {
+    width: 5em;
+    animation-name: spin;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.cabeçalho__center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3em 3em;
+}
+
+.cabeçalho_lista {
+    gap: 15px;
+    padding: 3em 3em 3em 3em;
+    display: flex;   
+    font-size: 20px;
+    margin-right: 3em;
+}
+
+.cabeçalho_lista_item{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s;
+    
+}
+
+.cabeçalho_lista_item:hover {
+    font-size: 23px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box__texto {
+    width: 30%;
+    padding: 1em 1em;
+    margin-left: 6em;
+    margin-bottom: 3em ;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box__apresentação{
+    margin-top: 2em;
+}
+.titulo {
+    margin-bottom: 1em;
+}
+
+
+.img {
+    width: 37%;
+    box-shadow: 10px 10px 5px 5px rgb( 0 0 0 / 0.3);
+    transition: 1s;
+}
+
+.img:hover {
+    width: 40%;
+}
+
+.img__explicação {
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.img__apresentação{
+    margin-right: 3em;
+}
+
+.container__história {
+    margin-top: 5em;
+}
+
+.img__história {
+    width: 28%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.rodapé {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    box-shadow: 10px 10px 10px 10px rgb( 0 0 0 / 0.3);
+}
+
+.rodapé__titulo{
+    margin-right: 8em;
+}
+
+.insta__icon {
+    width: 35%;
+    transition: 1s;
+    margin-left: 5em;
+}
+.insta__icon:hover {
+    width: 40%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
